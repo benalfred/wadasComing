@@ -474,9 +474,9 @@
             }
             
             //set color as float values in buffer arrays
-            rBuffer.push(r);
-            gBuffer.push(g);
-            bBuffer.push(b);
+            // rBuffer.push(r);
+            // gBuffer.push(g);
+            // bBuffer.push(b);
         }
         
         //While converting floats to integer valued color values, apply Floyd-Steinberg dither.
@@ -530,3 +530,75 @@
     };
 
 })( jQuery, window, document );
+
+
+
+
+// export default {
+//     components:{
+//        Footer
+//    },
+//    data() {
+//        return {
+//            states: [],
+//            addresses: [],
+//            credentials:{
+//            selectedState: "Select State",
+//            selectedAddress:"Select your Area"
+//            }
+//        }
+//    },
+//    layout: 'home',
+//    created() {
+//      this.fetchStates()
+
+//  },
+
+//     mounted(){
+//     setTimeout(() => {
+//          if (process.client) {
+//            $(document).ready(function(){
+//    $("#exampleModalCenter").modal('show');
+//    });
+//    }
+//     }, 3000);
+//    AOS.init();
+//  },
+//  methods: {
+//      ...mapActions("categories",[
+//          "fetchShopWithinArea"
+//      ]),
+//      linkToShop() {
+//        if (process.client) {
+//            console.log(this.credentials)
+//            localStorage.setItem('selectedAddressId',JSON.stringify(this.credentials.selectedAddress))
+//            localStorage.setItem('selectedStateId',JSON.stringify(this.credentials.selectedState))
+//        }
+//       if(process.client)  $("#exampleModalCenter").modal('hide');
+//        this.$router.push('/demos')
+//      },
+//      async fetchStateAddress(id) {
+//                try {
+//                  if (process.client) {
+//           let x;
+//         x =  document.getElementById('mySelect').value
+//           const  response = await this.$axios.get(`/state/addresses/${x}`)
+//           this.addresses = response.data
+//       }
+
+//      } catch (error) {
+//          console.log(error)
+//      }
+
+//      },
+//     async fetchStates() {
+//    try {
+//        const response = await this.$axios.get('states/all')
+//        this.states = response.data
+//    } catch (error) {
+//        console.log(error)
+//    }
+//      }
+//  },
+
+// }
