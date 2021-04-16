@@ -517,6 +517,7 @@ ul.style2-nav li:hover .nav-menu {
     border-radius: 20px;
     transition: all 0.3s;
     position: relative;
+    color: white!important;
 }
 .counter-style1 .count-down-list.list-inline > li::before {
     content: "";
@@ -1725,3 +1726,16 @@ textarea.form-control {
     background-color: #101a5f8c;
     z-index: 1;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+

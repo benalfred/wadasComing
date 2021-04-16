@@ -473,7 +473,7 @@
                 b = b0;
             }
             
-            //set color as float values in buffer arrays
+            // set color as float values in buffer arrays
             // rBuffer.push(r);
             // gBuffer.push(g);
             // bBuffer.push(b);
